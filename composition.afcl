@@ -1,0 +1,11 @@
+composition:
+  workflow:
+    - name: divide_into_batches
+      component: AWS_LAMBDA
+      function: lambda_handler.divide_into_batches
+    - name: count_occurrences
+      component: AWS_LAMBDA
+      function: lambda_handler.count_occurrences
+    - name: sum_occurrences
+      component: AWS_LAMBDA
+      function: lambda_handler.sum_occurrences
